@@ -1,1 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Grade Tracker</title>
+</head>
+<body>
+
+    <h1>Student Grade Tracker</h1>
+    <h2>Add Student</h2>
+
+    <form id="studentForm">
+        <label for="name">Student Name:</label>
+        <input type="text" id="name" required>
+
+        <label for="math">Mathematics:</label>
+        <input type="number" id="math" min="0" max="100" required>
+
+        <label for="physics">Physics:</label>
+        <input type="number" id="physics" min="0" max="100" required>
+
+        <label for="english">English:</label>
+        <input type="number" id="english" min="0" max="100" required>
+
+        <label for="cs">Computer Science:</label>
+        <input type="number" id="cs" min="0" max="100" required>
+
+        <button type="submit">Add Student</button>
+    </form>
+
+    <h2>Student Records</h2>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Math</th>
+                <th>Physics</th>
+                <th>English</th>
+                <th>CS</th>
+                <th>Average</th>
+                <th>Grade</th>
+            </tr>
+        </thead>
+        <tbody id="studentTable">
+        </tbody>
+    </table>
+
+</body>
+</html>
 
